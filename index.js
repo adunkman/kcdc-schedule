@@ -3,7 +3,7 @@ var express = require("express"),
     csv = require("csv"),
     stylus = require("stylus"),
     scheduleFile = __dirname + "/data/schedule.csv",
-    port = 8080;
+    port = process.env.PORT || 8080;
 
 app.set("view engine", "jade");
 
