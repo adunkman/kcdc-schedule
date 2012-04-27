@@ -1,0 +1,8 @@
+ul
+  each event in events
+    li
+      h2= event.title
+      p.details
+        time #{event.start}&ndash;#{event.end}
+        span.room= event.room
+        span.speaker= event.speaker
