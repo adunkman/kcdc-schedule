@@ -25,7 +25,8 @@ app.get("/", function (req, res) {
         end: data[1],
         room: data[2],
         title: data[3],
-        speaker: data[4]
+        speaker: data[4],
+        description: data[5]
       });
     })
     .on("end", function () {

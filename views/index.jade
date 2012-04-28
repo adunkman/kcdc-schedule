@@ -1,8 +1,12 @@
 ul
   each event in events
-    li
-      h2= event.title
-        span.speaker= event.speaker
-      p.details
-        span.room= event.room
-        time #{event.start}&ndash;#{event.end}
+    if event.title
+      li.expander
+        h2= event.title
+          span.speaker= event.speaker
+        p.details
+          span.room= event.room
+          time #{event.start}&ndash;#{event.end}
+        p.description= event.description
+    else
+      li.separator
