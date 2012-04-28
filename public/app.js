@@ -5,7 +5,7 @@
 
   var addExpandAndContractBehavior = function () {
     $(container).click(function () {
-      $(details, this).toggle(200);
+      $(details, this).slideToggle(200);
     });
   };
 
